@@ -1,2 +1,2 @@
-# greywhale.github.io
+# SignBot-demo
 The webpage for SignBot.
