@@ -116,15 +116,6 @@
             display: block;      /* 消除行内元素间隙 */
         }
 
-        .bushu-container {
-            width: 50%;          /* 控制视频宽度 */
-            max-width: 1000px;   /* 最大宽度限制 */
-            margin: 20px auto;   /* 上下边距 + 水平居中 */
-            border-radius: 12px; /* 圆角效果 */
-            overflow: hidden;    /* 隐藏溢出内容 */
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* 添加投影 */
-        }
-
          .video-container {
         display: flex;
         flex-wrap: wrap;
@@ -346,15 +337,20 @@ However, the number of people proficient in sign language remains limited, highl
 
         <section id="experiment">
             <h2>W1 Deployment</h2>
-            <div class="bushu-container">
-                            <video src="play-1.mp4" controls></video>
-            </div>
-             <div class="bushu-container">
-                            <video src="see a doctor-1.mp4" controls></video>
-                        </div>
-            <div class="bushu-container">
-                            <video src="supermarket-1.mp4" controls></video>
- 
+            <div style="display: flex; justify-content: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <div style="width: 200px; height: 200px;">
+                        <video src="play-1.mp4" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    
+                    <div style="width: 200px; height: 200px;">
+                        <video src="supermarket-1.mp4" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+
+                    <div style="width: 200px; height: 200px;">
+                        <video src="see a doctor-1.mp4" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                </div>
             </div>
         </section>
 
