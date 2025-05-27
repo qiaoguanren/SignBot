@@ -117,48 +117,37 @@
         }
 
         .video-container {
-            display: flex;  
-            justify-content: center; 
-            gap: 20px; 
-            flex-wrap: wrap; /* 适应小屏幕 */
-            margin-top: 20px;
-        }
-
-        .video-wrapper {
             display: flex;
-            flex-direction: column; /* 让视频和文本垂直排列 */
-            align-items: center; /* 让文本居中 */
-            width: 45%; 
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
-
+        .video-wrapper {
+            width: 200px; /* Adjust this value as needed */
+            height: 200px; /* Adjust this value as needed */
+        }
         .video-wrapper video {
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            object-fit: cover;
         }
-
-
         .video-text {
-            position: static;
-            background: none;
-            color: black;
-            padding-top: 5px;
-            font-size: 20px;
+            width: 100%;
             text-align: center;
-            font-weight: bold; /* 新增加粗样式 */
+            margin: 10px 0;
+        }
+        .video-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+        }
+        .text-between {
+            margin: 0 20px;
         }
 
-        /* 响应式布局 */
-        @media (max-width: 768px) {
-            .video-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .video-wrapper {
-                width: 60%;
-            }
-        }
     </style>
 </head>
 
@@ -215,24 +204,25 @@ However, the number of people proficient in sign language remains limited, highl
             <h2>H1 Simulation</h2>
             <!-- <p>Describe the experiment process in the paper, including experimental setup, data collection, etc.</p> -->
             <div class="video-container">
-                <div class="video-wrapper">
-                    <video src="h1_1_robot.mp4" controls></video>
-                    
+                <div class="video-row">
+                    <div class="video-wrapper">
+                        <video src="h1_1_robot.mp4" controls></video>
+                    </div>
+                    <p class="text-between">Who is he?</p>
+                    <div class="video-wrapper">
+                        <video src="h1_1_human.mp4" controls></video>
+                    </div>
                 </div>
-                <div class="video-wrapper">
-                    <video src="h1_1_human.mp4" controls></video>
+                
+                <div class="video-row">
+                    <div class="video-wrapper">
+                        <video src="h1_2_robot.mp4" controls></video>
+                    </div>
+                    <p class="text-between">Is he your classmate?</p>
+                    <div class="video-wrapper">
+                        <video src="h1_2_human.mp4" controls></video>
+                    </div>
                 </div>
-                <p class="video-text">Who is he?</p>
-
-                <div class="video-wrapper">
-                    <video src="h1_2_robot.mp4" controls></video>
-                    
-                </div>
-                <div class="video-wrapper">
-                    <video src="h1_2_human.mp4" controls></video>
-                    
-                </div>
-                <p class="video-text">Is he your classmate?</p>
             </div>
             <div class="video-container">
                 <div class="video-wrapper">
