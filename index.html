@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignBot: Learning Human-to-Humanoid Sign Language Interaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/bilibili-svgrepo-com.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
     <!-- <meta name="description" content=""> -->
     <!-- <meta name="keywords" content=""> -->
     <style>
@@ -153,8 +170,26 @@
 
 <body>
     <header>
-        <h1>SignBot: Learning Human-to-Humanoid Sign Language Interaction</h1>
+        <h1 class="title is-1 publication-title">SignBot: Learning Human-to-Humanoid Sign Language Interaction</h1>
         <p>Guanren Qiao, Sixu Lin, Ronglai Zuo, Zhizheng Wu, Kui Jia, Guiliang Liu</p>
+        <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=AGD25x0AAAAJ&hl=zh-CN&oi=ao">Sixu Lin</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=vyCvXx8AAAAJ&hl=zh-CN&oi=ao">Ronglai Zuo</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=K6zhweAAAAAJ&hl=zh-CN&oi=ao">Zhizheng Wu</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Mf9VHRcAAAAJ&hl=zh-CN&oi=ao">Kui Jia</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://guiliang.me/">Guiliang Liu</a>
+            </span>
+          </div>
         <!-- <img src="CUHKSZ.png" alt="Logo" style="width: 150px; margin-right: 20px;">
         <img src="HITSZ.jpeg" alt="Logo" style="width: 150px;">
         <img src="Dexforce.jpg" alt="Logo" style="width: 150px;"> -->
@@ -163,8 +198,6 @@
                     align-items: center; 
                     gap: 5px;  /* 缩小间距 */">
             <img src="CUHKSZ.png" alt="Logo" style="width: 100px; margin: 0 8px;">  <!-- 添加横向margin -->
-            <img src="HITSZ.png" alt="Logo" style="width: 100px; margin: 0 8px;">
-            <img src="IC.png" alt="Logo" style="width: 80px; margin: 0 8px;">
             <img src="Dexforce.png" alt="Logo" style="width: 120px; margin: 0 8px;">
         </div>
         <div>
@@ -174,12 +207,6 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#experiment">SignBot Demo</a></li>
-        </ul>
-    </nav>
 
     <main>
         <!-- <div class="youtube-container">
@@ -276,6 +303,32 @@ However, the number of people proficient in sign language remains limited, highl
                         </div>
                     </div>
                     <p class="video-text">Who cooked this dish?</p>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-group">
+                    <div class="video-row">
+                        <div class="video-wrapper">
+                            <video src="h1_7_robot.mp4" controls></video>
+                        </div>
+                        <div class="video-wrapper">
+                            <video src="h1_7_human.mp4" controls></video>
+                        </div>
+                    </div>
+                    <p class="video-text">The plane is about to take off, please turn off your mobile phone.</p>
+                </div>
+                
+                <div class="video-group">
+                    <div class="video-row">
+                        <div class="video-wrapper">
+                            <video src="h1_8_robot.mp4" controls></video>
+                        </div>
+                        <div class="video-wrapper">
+                            <video src="h1_8_human.mp4" controls></video>
+                        </div>
+                    </div>
+                    <p class="video-text">Is it still okay to go running?</p>
                 </div>
             </div>
         </section>
