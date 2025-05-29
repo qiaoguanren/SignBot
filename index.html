@@ -171,7 +171,6 @@
 <body>
     <header>
         <h1 class="title is-1 publication-title">SignBot: Learning Human-to-Humanoid Sign Language Interaction</h1>
-        <p>Guanren Qiao, Sixu Lin, Ronglai Zuo, Zhizheng Wu, Kui Jia, Guiliang Liu</p>
         <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://qiaoguanren.github.io/">Guanren Qiao</a>,</span>
@@ -196,7 +195,7 @@
         <div style="display: flex; 
                     justify-content: center;  /* 改为居中排列 */
                     align-items: center; 
-                    gap: 5px;  /* 缩小间距 */">
+                    gap: 0px;  /* 缩小间距 */">
             <img src="CUHKSZ.png" alt="Logo" style="width: 100px; margin: 0 8px;">  <!-- 添加横向margin -->
             <img src="Dexforce.png" alt="Logo" style="width: 120px; margin: 0 8px;">
         </div>
@@ -221,14 +220,23 @@
             <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114578167958754&bvid=BV1u6jRzaE3L&cid=30174744189&p=1&high_quality=1" scrolling="no" style="border: none;" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
         </div>        
 
-        <section id="abstract">
-            <h2>Abstract</h2>
-            <p>Sign language is a natural and visual form of language that uses movements and expressions to convey meaning, serving as a crucial means of communication for individuals who are deaf or hard-of-hearing (DHH).
-However, the number of people proficient in sign language remains limited, highlighting the need for technological advancements to bridge communication gaps and foster interactions with minorities. Based on recent advancements in embodied humanoid robots, we propose SignBot, a novel framework for human-robot sign language interaction. SignBot integrates a cerebellum-inspired motion control component and a cerebral-oriented module for comprehension and interaction. Specifically, SignBot consists of: 1) Motion Retargeting, which converts human sign language datasets into robot-compatible kinematics; 2) Motion Control, which leverages a learning-based paradigm to develop a robust humanoid control policy for tracking sign language gestures; and 3) Generative Interaction, which incorporates translator, responser, and generator of sign language, thereby enabling natural and effective communication between robots and humans. Simulation and real-world experimental results demonstrate that SignBot can effectively facilitate human-robot interaction and perform sign language motions with diverse robots and datasets. SignBot represents a significant advancement in automatic sign language interaction on embodied humanoid robot platforms, providing a promising solution to improve communication accessibility for the DHH community.</p>
-        </section>
+        <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                <p>
+                    Sign language is a natural and visual form of language that uses movements and expressions to convey meaning, serving as a crucial means of communication for individuals who are deaf or hard-of-hearing (DHH). However, the number of people proficient in sign language remains limited, highlighting the need for technological advancements to bridge communication gaps and foster interactions with minorities. Based on recent advancements in embodied humanoid robots, we propose SignBot, a novel framework for human-robot sign language interaction. SignBot integrates a cerebellum-inspired motion control component and a cerebral-oriented module for comprehension and interaction. Specifically, SignBot consists of: 1) Motion Retargeting, which converts human sign language datasets into robot-compatible kinematics; 2) Motion Control, which leverages a learning-based paradigm to develop a robust humanoid control policy for tracking sign language gestures; and 3) Generative Interaction, which incorporates translator, responser, and generator of sign language, thereby enabling natural and effective communication between robots and humans. Simulation and real-world experimental results demonstrate that SignBot can effectively facilitate human-robot interaction and perform sign language motions with diverse robots and datasets. SignBot represents a significant advancement in automatic sign language interaction on embodied humanoid robot platforms, providing a promising solution to improve communication accessibility for the DHH community.
+                </p>
+                </div>
+            </div>
+            </div>
 
-        <section id="experiment">
-            <h2>H1 Simulation</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+            <h2 class="title is-3">H1 Simulation</h2>
             <!-- <p>Describe the experiment process in the paper, including experimental setup, data collection, etc.</p> -->
             <div class="video-container">
                 <div class="video-group">
@@ -331,10 +339,12 @@ However, the number of people proficient in sign language remains limited, highl
                     <p class="video-text">Is it still okay to go running?</p>
                 </div>
             </div>
-        </section>
+        </div>
+        </div>
 
-        <section id="experiment">
-            <h2>W1 Simulation</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+            <h2 class="title is-3">W1 Simulation</h2>
             <div class="video-container">
                 <div class="video-group">
                     <div class="video-row">
@@ -386,10 +396,12 @@ However, the number of people proficient in sign language remains limited, highl
                     <p class="video-text">I've written you a prescription for some cough medicine.</p>
                 </div>
             </div>
-        </section>
+        </div>
+        </div>
 
-        <section id="experiment">
-            <h2>W1 Deployment</h2>
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+            <h2 class="title is-3">W1 Deployment</h2>
             <div style="display: flex; justify-content: center;">
                 <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
 
@@ -407,7 +419,8 @@ However, the number of people proficient in sign language remains limited, highl
 
                 </div>
             </div>
-        </section>
+        </div>
+        </div>
 
         <!-- <section id="citation">
             <h2>Citation</h2>
